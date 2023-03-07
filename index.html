@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/src/" target="_parent">
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="bg-primary-100 font-CozySans w-full max-w-md mx-auto">
+    <header class="bg-primary-200 pb-4">
+        <div class=" w-full p-4 flex justify-between items-center">
+            <a href="" class="font-black text-white h-12 w-[154px] flex flex-col items-center">
+                <h1 class="text-[28px]">COZY HOME</h1>
+                <h6 class="text-[7px]">TỔ ẤM TIỆN NGHI</h6>
+            </a>
+            <button class="w-9 flex flex-col items-center">
+                <svg class="mt-2" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H21V3H0V0Z" fill="white" />
+                    <path d="M0 7.5H21V10.5H0V7.5Z" fill="white" />
+                    <path d="M0 15H21V18H0V15Z" fill="white" />
+                </svg>
+            </button>
+        </div>
+        <div class="font-black text-white px-4 pb-4 mt-20">
+            <h6 class="text-[10px]">CẬP NHẬP MỚI NHẤT</h6>
+            <h6 class="mt-1 text-secondary text-[10px]">THÁNG 1/2023</h6>
+            <div class="h-[86px] mt-2 font-black">
+                <h1 id="change-text" class="text-[36px]">Xây dựng <br> tổ ấm tiện nghi</h1>
+            </div>
+        </div>
+    </header>
+    <div id="drag-srcoll" class="snap-x scroll-smooth font-black h-20 w-full flex items-center overflow-x-scroll overflow-y-hidden scrollbar-hide text-[14px]">
+        <button data-target="product1" class="switch-product focus:outline-none active w-48 px-4 flex-shrink-0 h-20 bg-primary-100 flex flex-col items-start justify-center border-b-2 border-primary-300 snap-start" tabindex="0" autofocus>
+            <p class="text-secondary text-[10px] mb-3">Dòng 1</p>
+            <h3 class="text-white">Kệ hẹp di động</h3>
+        </button>
+        <button data-target="product2" class="switch-product focus:outline-none w-48 px-4 flex-shrink-0 h-20 bg-primary-100 flex flex-col items-start justify-center border-b-2 border-primary-100 snap-start focus:border-b-secondary focus:bg-primary-300">
+            <p class="text-secondary text-[10px] mb-3">Dòng 2</p>
+            <h3 class="text-white">Kệ khung sắt tối giản</h3>
+        </button>
+        <button data-target="product3" class="switch-product focus:outline-none w-48 px-4 flex-shrink-0 h-20 bg-primary-100 flex flex-col items-start justify-center snap-start border-b-2 border-primary-100 focus:border-b-secondary focus:bg-primary-300">
+            <p class="text-secondary text-[10px] mb-3">Dòng 3</p>
+            <h3 class="text-white">Kệ đồ sang trọng</h3>
+        </button>
+    </div>
+    <div class="flex items-start">
+        <div id="product1" class="product-item active overflow-hidden">
+            <div class="font-black border-none w-full aspect-[3/4]">
+                <div class="slider">
+                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product1.png" alt="">
+                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\produc1.1.png" alt="">
+                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product1.3.png" alt="">
+                </div>
+            </div>
+            <div class="w-full bg-primary-300 pb-5 px-4 font-black">
+                <p class="pt-10 text-[10px] text-secondary">DÒNG 1</p>
+                <h4 class="text-[24px] text-white">Kệ hẹp di động đa tầng</h4>
+                <div class="mt-3 w-52 h-14 font-semibold text-xs text-primary-400">
+                    <p>Phù hợp với các góc hẹp, bánh xe di chuyển tiện lợi, bền bỉ với nhựa abs, kháng nước tối ưu.</p>
+                </div>
+                <div class="w-[160px] text-[10px] h-6 text-white flex justify-between mt-4 uppercase">
+                    <p class=" mt-1">
+                        số tầng:
+                    </p>
+                    <button class="choose-product active w-9 h-6 border border-primary-200 focus:border-secondary">
+                        03
+                    </button>
+                    <button class="choose-product w-9 h-6 border border-primary-100 focus:border-secondary">
+                        04
+                    </button>
+                </div>
+                <div class="w-[160px] h-6 flex mt-4 justify-between">
+                    <p class="text-[10px] mt-1 text-white uppercase">màu sắc:</p>
+                    <button class="choose-color active w-9 h-6 bg-white border border-primary-100 focus:border-secondary">
+                    </button>
+                    <button class="choose-color w-9 h-6 bg-primary-400 border border-primary-100 focus:border-secondary">
+                    </button>
+                </div>
+                <div class="flex mt-8 items-center uppercase">
+                    <h4 class="text-[24px] text-white">167.000đ</h4>
+                    <h6 class="ml-2 mt-2 font-semibold text-[14px] line-through text-secondary">
+                        327.000đ
+                    </h6>
+                </div>
+                <div class="flex flex-col items-center border border-none text-white mt-2">
+                    <div class="h-7 flex items-center justify-center w-full bg-primary-400/20 mx-4 ">
+                        <p class="my-1 text-center font-normal text-[10px]">
+                            Kết thúc sau:
+                        </p>
+                        <p class="text-center font-normal text-[10px] countdown">2:00:00</p>
+                    </div>
+                    <a href="checkout.html" class="mt-9 w-[70%] uppercase text-sm h-10 bg-secondary flex items-center justify-center">
+                        Đặt hàng ngay
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="product2" class="product-item overflow-hidden">
+            <div class="font-black border-none w-full aspect-[3/4]">
+                <div class="slider">
+                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product2.png" alt="">
+                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product2.png" alt="">
+                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product2.png" alt="">
+                </div>
+            </div>
+            <div class="w-full bg-primary-300 pb-5 px-4 font-black">
+                <p class="pt-10 text-[10px] text-secondary">DÒNG 2</p>
+                <h4 class="text-[24px] text-white">Kệ khung sắt tối giản</h4>
+                <div class="mt-3 w-52 h-14 font-semibold text-xs text-primary-400">
+                    <p>Phù hợp với các góc hẹp, bánh xe di chuyển tiện lợi, bền bỉ với nhựa abs, kháng nước tối ưu.</p>
+                </div>
+                <div class="w-[160px] text-[10px] h-6 text-white flex justify-between mt-4 uppercase">
+                    <p class=" mt-1">
+                        số tầng:
+                    </p>
+                    <button class="choose-product active w-9 h-6 border border-primary-200 focus:border-secondary">
+                        03
+                    </button>
+                    <button class="choose-product w-9 h-6 border border-primary-100 focus:border-secondary">
+                        04
+                    </button>
+                </div>
+                <div class="w-[160px] h-6 flex mt-4 justify-between">
+                    <p class="text-[10px] mt-1 text-white uppercase">màu sắc:</p>
+                    <button class="choose-color active w-9 h-6 bg-white border border-primary-100 focus:border-secondary">
+                    </button>
+                    <button class="choose-color w-9 h-6 bg-primary-400 border border-primary-100 focus:border-secondary">
+                    </button>
+                </div>
+                <div class="flex mt-8 items-center uppercase">
+                    <h4 class="text-[24px] text-white">167.000đ</h4>
+                    <h6 class="ml-2 mt-2 font-semibold text-[14px] line-through text-secondary">
+                        327.000đ
+                    </h6>
+                </div>
+                <div class="flex flex-col items-center border border-none text-white mt-2">
+                    <div class="h-7 flex items-center justify-center w-full bg-primary-400/20 mx-4 ">
+                        <p class="my-1 text-center font-normal text-[10px]">
+                            Kết thúc sau:
+                        </p>
+                        <p class="text-center font-normal text-[10px] countdown">2:00:00</p>
+                    </div>
+                    <a href="checkout.html" class="mt-9 w-[70%] uppercase text-sm h-10 bg-secondary flex items-center justify-center">
+                        Đặt hàng ngay
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="product3" class="product-item overflow-hidden">
+            <div class="font-black border-none w-full aspect-[3/4]">
+                <div class="slider">
+                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product3.1.png" alt="">
+                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product3.2.png" alt="">
+                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product3.png" alt="">
+                </div>
+            </div>
+            <div class="w-full bg-primary-300 pb-5 px-4 font-black">
+                <p class="pt-10 text-[10px] text-secondary">DÒNG 3</p>
+                <h4 class="text-[24px] text-white">Kệ đồ sang trọng</h4>
+                <div class="mt-3 w-52 h-14 font-semibold text-xs text-primary-400">
+                    <p>Phù hợp với các góc hẹp, bánh xe di chuyển tiện lợi, bền bỉ với nhựa abs, kháng nước tối ưu.</p>
+                </div>
+                <div class="w-[160px] text-[10px] h-6 text-white flex justify-between mt-4 uppercase">
+                    <p class=" mt-1">
+                        số tầng:
+                    </p>
+                    <button class="choose-product active w-9 h-6 border border-primary-200 focus:border-secondary">
+                        03
+                    </button>
+                    <button class="choose-product w-9 h-6 border border-primary-100 focus:border-secondary">
+                        04
+                    </button>
+                </div>
+                <div class="w-[160px] h-6 flex mt-4 justify-between">
+                    <p class="text-[10px] mt-1 text-white uppercase">màu sắc:</p>
+                    <button class="choose-color active w-9 h-6 bg-white border border-primary-100 focus:border-secondary">
+                    </button>
+                    <button class="choose-color w-9 h-6 bg-primary-400 border border-primary-100 focus:border-secondary">
+                    </button>
+                </div>
+                <div class="flex mt-8 items-center uppercase">
+                    <h4 class="text-[24px] text-white">167.000đ</h4>
+                    <h6 class="ml-2 mt-2 font-semibold text-[14px] line-through text-secondary">
+                        327.000đ
+                    </h6>
+                </div>
+                <div class="flex flex-col items-center border border-none text-white mt-2">
+                    <div class="h-7 flex items-center justify-center w-full bg-primary-400/20 mx-4 ">
+                        <p class="my-1 text-center font-normal text-[10px]">
+                            Kết thúc sau:
+                        </p>
+                        <p class="countdown text-center font-normal text-[10px]">2:00:00</p>
+                    </div>
+                    <a href="checkout.html" class="mt-9 w-[70%] uppercase text-sm h-10 bg-secondary flex items-center justify-center">
+                        Đặt hàng ngay
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="h-[450px] text-white">
+        <div class="h-[140px] bg-primary-200 flex flex-col justify-center items-center">
+            <div class="flex justify-between w-[230px]">
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.4999 1.08337L14.7187 7.60421L21.9166 8.65629L16.7083 13.7292L17.9374 20.8959L11.4999 17.5105L5.06242 20.8959L6.29159 13.7292L1.08325 8.65629L8.28117 7.60421L11.4999 1.08337Z" fill="#F3DD14" stroke="#F3DD14" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.4999 1.08337L14.7187 7.60421L21.9166 8.65629L16.7083 13.7292L17.9374 20.8959L11.4999 17.5105L5.06242 20.8959L6.29159 13.7292L1.08325 8.65629L8.28117 7.60421L11.4999 1.08337Z" fill="#F3DD14" stroke="#F3DD14" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.4999 1.08337L14.7187 7.60421L21.9166 8.65629L16.7083 13.7292L17.9374 20.8959L11.4999 17.5105L5.06242 20.8959L6.29159 13.7292L1.08325 8.65629L8.28117 7.60421L11.4999 1.08337Z" fill="#F3DD14" stroke="#F3DD14" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.4999 1.08337L14.7187 7.60421L21.9166 8.65629L16.7083 13.7292L17.9374 20.8959L11.4999 17.5105L5.06242 20.8959L6.29159 13.7292L1.08325 8.65629L8.28117 7.60421L11.4999 1.08337Z" fill="#F3DD14" stroke="#F3DD14" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.4999 1.08337L14.7187 7.60421L21.9166 8.65629L16.7083 13.7292L17.9374 20.8959L11.4999 17.5105L5.06242 20.8959L6.29159 13.7292L1.08325 8.65629L8.28117 7.60421L11.4999 1.08337Z" fill="#F3DD14" stroke="#F3DD14" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </div>
+            <p class="text-[12px] font-black mt-6">Sản xuất trên dây truyền hiện đại từ Nhật Bản</p>
+        </div>
+        <div class="h-[300px] bg-primary-300 pt-10 flex flex-col items-center">
+            <div class="font-black h-16 w-[182px] flex flex-col items-center">
+                <h1 class="text-[34px]">COZY HOME</h1>
+                <h6 class="text-[9px] mt-0">TỔ ẤM TIỆN NGHI</h6>
+            </div>
+            <div class="w-[130px] mt-[70px] flex justify-between">
+                <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1H9C7.67392 1 6.40215 1.52678 5.46447 2.46447C4.52678 3.40215 4 4.67392 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.73478 8.10536 5.48043 8.29289 5.29289C8.48043 5.10536 8.73478 5 9 5H12V1Z" stroke="#FDFDFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 11.37C16.1234 12.2022 15.9812 13.0522 15.5937 13.799C15.2062 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9079 12.2384 16.0396 11.4077 15.9059C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1902 8.22768 13.4229 8.09402 12.5922C7.96035 11.7615 8.09202 10.9099 8.47028 10.1584C8.84854 9.40685 9.45414 8.79374 10.2009 8.40624C10.9477 8.01874 11.7977 7.87658 12.63 8C13.4789 8.12588 14.2648 8.52146 14.8716 9.1283C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M17.5 6.5H17.51" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M22 6L12 13L2 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </div>
+            <p class="font-normal text-[12px] mt-10">Địa chỉ sản xuất: 212 Thường Tín, Hà Nội</p>
+        </div>
+        <div class="h-12 bg-primary-200 flex justify-center items-center">
+            <p class="text-[12px] font-normal">Bản quyền thuộc về COZY HOME - Thiết kế bởi <a href="#">QAkita</a></p>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function () {
+        function hide_product(active_product) {
+            $('.product-item').removeClass('active');
+            $('#' + active_product).addClass('active');
+            $('.slider').slick('refresh');
+
+        }
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            arrows: false,
+            speed: 300,
+            slidesToShow: 1,
+        });
+        $('.switch-product').click(function () {
+            $('.switch-product').removeClass('active');
+            $(this).addClass('active');
+            let prod_target = $(this).data("target");
+            hide_product(prod_target);
+        });
+        $('.choose-product').click(function () {
+            $('.choose-product').removeClass('active');
+            $(this).addClass('active');
+        });
+        $('.choose-color').click(function () {
+            $('.choose-color').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script>
+<script>
+    var seconds = 0, minutes = 0, hours = 2;
+
+    function startCountdown() {
+        setInterval(function () {
+            seconds--;
+            if (seconds < 0) {
+                seconds = 59;
+                minutes--;
+                if (minutes < 0) {
+                    minutes = 59;
+                    hours--;
+                    if (hours < 0) {
+                        hours = 2;
+                    }
+                }
+            }
+            $('.countdown').text((' 0' + hours).slice(-2) + ' giờ ' + ('0' + minutes).slice(-2) + ' phút ' + ('0' + seconds).slice(-2) + ' giây');
+        }, 1000);
+
+        setInterval(function () {
+            seconds = 0;
+            minutes = 0;
+            hours = 2;
+        }, 7200000); // 2 hours in milliseconds
+    }
+
+    startCountdown();
+    var x, y, top, left, down;
+
+</script>
+<script>
+
+    $("#drag-srcoll").mousedown(function (e) {
+        e.preventDefault();
+        down = true;
+        x = e.pageX;
+        y = e.pageY;
+        top = $(this).scrollTop();
+        left = $(this).scrollLeft();
+    });
+
+    $("body").mousemove(function (e) {
+        if (down) {
+            var newX = e.pageX;
+            var newY = e.pageY;
+
+            $("#drag-srcoll").scrollTop(top - newY + y);
+            $("#drag-srcoll").scrollLeft(left - newX + x);
+        }
+    });
+
+    $("body").mouseup(function (e) { down = false; });
+</script>
+
+</html>
