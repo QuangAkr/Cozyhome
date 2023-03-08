@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/src/" target="_parent">
     <link href="assets/css/styles.css" rel="stylesheet" />
     <title>COZY HOME</title>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap" rel="stylesheet">
@@ -29,22 +30,22 @@
         </div>
         <div class="font-black text-white px-4 pb-4 mt-20">
             <h6 class="text-[10px]">CẬP NHẬP MỚI NHẤT</h6>
-            <h6 class="mt-1 text-secondary text-[10px]">THÁNG 1/2023</h6>
+            <h6 class="mt-1 text-secondary text-[10px]">THÁNG 3/2023</h6>
             <div class="h-[86px] mt-2 font-black">
                 <h1 id="change-text" class="text-[36px]">Xây dựng <br> tổ ấm tiện nghi</h1>
             </div>
         </div>
     </header>
     <div id="drag-srcoll" class="snap-x scroll-smooth font-black h-20 w-full flex items-center overflow-x-scroll overflow-y-hidden scrollbar-hide text-[14px]">
-        <button data-target="product1" class="switch-product focus:outline-none active w-48 px-4 flex-shrink-0 h-20 bg-primary-100 flex flex-col items-start justify-center border-b-2 border-primary-300 snap-start" tabindex="0" autofocus>
+        <button data-target="product1" class="switch-product border-r border-r-primary-300 focus:outline-none active w-48 px-4 flex-shrink-0 h-20 bg-primary-100 flex flex-col items-start justify-center border-b-2 border-primary-100 snap-start" tabindex="0" autofocus>
             <p class="text-secondary text-[10px] mb-3">Dòng 1</p>
             <h3 class="text-white">Kệ hẹp di động</h3>
         </button>
-        <button data-target="product2" class="switch-product focus:outline-none w-48 px-4 flex-shrink-0 h-20 bg-primary-100 flex flex-col items-start justify-center border-b-2 border-primary-100 snap-start focus:border-b-secondary focus:bg-primary-300">
+        <button data-target="product2" class="switch-product border-r border-r-primary-300  focus:outline-none w-48 px-4 flex-shrink-0 h-20 bg-primary-100 flex flex-col items-start justify-center border-b-2 border-primary-100 snap-start focus:border-b-secondary focus:bg-primary-300">
             <p class="text-secondary text-[10px] mb-3">Dòng 2</p>
             <h3 class="text-white">Kệ khung sắt tối giản</h3>
         </button>
-        <button data-target="product3" class="switch-product focus:outline-none w-48 px-4 flex-shrink-0 h-20 bg-primary-100 flex flex-col items-start justify-center snap-start border-b-2 border-primary-100 focus:border-b-secondary focus:bg-primary-300">
+        <button data-target="product3" class="switch-product border-r border-r-primary-300  focus:outline-none w-48 px-4 flex-shrink-0 h-20 bg-primary-100 flex flex-col items-start justify-center snap-start border-b-2 border-primary-100 focus:border-b-secondary focus:bg-primary-300">
             <p class="text-secondary text-[10px] mb-3">Dòng 3</p>
             <h3 class="text-white">Kệ đồ sang trọng</h3>
         </button>
@@ -53,9 +54,13 @@
         <div id="product1" class="product-item active overflow-hidden">
             <div class="font-black border-none w-full aspect-[3/4]">
                 <div class="slider">
-                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product1.png" alt="">
-                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\produc1.1.png" alt="">
-                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product1.3.png" alt="">
+                    <img class="w-full object-contain bg-[#555555] aspect-[3/4]" src="assets\imgs\p1\img1.jpg" alt="">
+                    <img class="w-full object-contain bg-[#555555] aspect-[3/4]" src="assets\imgs\p1\img2.jpg" alt="">
+                    <img class="w-full object-contain bg-[#555555] aspect-[3/4]" src="assets\imgs\p1\img3.jpg" alt="">
+                    <img class="w-full object-contain bg-[#555555] aspect-[3/4]" src="assets\imgs\p1\img4.jpg" alt="">
+                    <img class="w-full object-contain bg-[#555555] aspect-[3/4]" src="assets\imgs\p1\img5.jpg" alt="">
+                    <img class="w-full object-contain bg-[#555555] aspect-[3/4]" src="assets\imgs\p1\img6.jpg" alt="">
+                    <img class="w-full object-contain bg-[#555555] aspect-[3/4]" src="assets\imgs\p1\img7.jpg" alt="">
                 </div>
             </div>
             <div class="w-full bg-primary-300 pb-5 px-4 font-black">
@@ -83,17 +88,17 @@
                     </button>
                 </div>
                 <div class="flex mt-8 items-center uppercase">
-                    <h4 class="text-[24px] text-white">167.000đ</h4>
+                    <h4 class="text-[24px] text-white">137.000đ</h4>
                     <h6 class="ml-2 mt-2 font-semibold text-[14px] line-through text-secondary">
                         327.000đ
                     </h6>
                 </div>
                 <div class="flex flex-col items-center border border-none text-white mt-2">
                     <div class="h-7 flex items-center justify-center w-full bg-primary-400/20 mx-4 ">
-                        <p class="my-1 text-center font-normal text-[10px]">
+                        <p class="my-1 text-center font-normal mr-1 text-[12px]">
                             Kết thúc sau:
                         </p>
-                        <p class="text-center font-normal text-[10px] countdown">2:00:00</p>
+                        <p class="text-center font-normal text-[14px] text-secondary countdown"> 05 phút 12 giây</p>
                     </div>
                     <a href="checkout.html" class="mt-9 w-[70%] uppercase text-sm h-10 bg-secondary flex items-center justify-center">
                         Đặt hàng ngay
@@ -104,9 +109,10 @@
         <div id="product2" class="product-item overflow-hidden">
             <div class="font-black border-none w-full aspect-[3/4]">
                 <div class="slider">
-                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product2.png" alt="">
-                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product2.png" alt="">
-                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product2.png" alt="">
+                    <img class="w-full object-contain bg-[#555555] aspect-[3/4]" src="assets\imgs\p2\img1.jpg" alt="">
+                    <img class="w-full object-contain bg-[#555555] aspect-[3/4]" src="assets\imgs\p2\img2.jpg" alt="">
+                    <img class="w-full object-contain bg-[#555555] aspect-[3/4]" src="assets\imgs\p2\img3.jpg" alt="">
+                    <img class="w-full object-contain bg-[#555555] aspect-[3/4]" src="assets\imgs\p2\img4.jpg" alt="">
                 </div>
             </div>
             <div class="w-full bg-primary-300 pb-5 px-4 font-black">
@@ -136,7 +142,7 @@
                 <div class="flex mt-8 items-center uppercase">
                     <h4 class="text-[24px] text-white">167.000đ</h4>
                     <h6 class="ml-2 mt-2 font-semibold text-[14px] line-through text-secondary">
-                        327.000đ
+                        350.000đ
                     </h6>
                 </div>
                 <div class="flex flex-col items-center border border-none text-white mt-2">
@@ -155,9 +161,9 @@
         <div id="product3" class="product-item overflow-hidden">
             <div class="font-black border-none w-full aspect-[3/4]">
                 <div class="slider">
-                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product3.1.png" alt="">
-                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product3.2.png" alt="">
-                    <img class="w-full object-cover aspect-[3/4]" src="assets\imgs\product3.png" alt="">
+                    <img class="w-full object-contain bg-[#555555] aspect-[3/4]" src="assets\imgs\p2\img1.jpg" alt="">
+                    <img class="w-full object-contain bg-[#555555] aspect-[3/4]" src="assets\imgs\p2\img2.jpg" alt="">
+                    <img class="w-full object-contain bg-[#555555] aspect-[3/4]" src="assets\imgs\p2\img3.jpg" alt="">
                 </div>
             </div>
             <div class="w-full bg-primary-300 pb-5 px-4 font-black">
@@ -187,7 +193,7 @@
                 <div class="flex mt-8 items-center uppercase">
                     <h4 class="text-[24px] text-white">167.000đ</h4>
                     <h6 class="ml-2 mt-2 font-semibold text-[14px] line-through text-secondary">
-                        327.000đ
+                        350.000đ
                     </h6>
                 </div>
                 <div class="flex flex-col items-center border border-none text-white mt-2">
@@ -247,10 +253,10 @@
                 </svg>
 
             </div>
-            <p class="font-normal text-[12px] mt-10">Địa chỉ sản xuất: 212 Thường Tín, Hà Nội</p>
+            <p class="font-normal text-[12px] mt-10">Địa chỉ sản xuất: Khánh Hà, Thường Tín, Hà Nội</p>
         </div>
         <div class="h-12 bg-primary-200 flex justify-center items-center">
-            <p class="text-[12px] font-normal">Bản quyền thuộc về COZY HOME - Thiết kế bởi <a href="/quangakita/" target="_blank">QAkita</a></p>
+            <p class="text-[12px] font-normal">Bản quyền thuộc về COZY HOME - Thiết kế bởi <a href="https://fb.com/quangakita/" target="_blank">QAkita</a></p>
         </div>
     </footer>
 </body>
@@ -288,7 +294,7 @@
     });
 </script>
 <script>
-    var seconds = 0, minutes = 0, hours = 2;
+    var seconds = 12, minutes = 5, hours = 0;
 
     function startCountdown() {
         setInterval(function () {
@@ -304,13 +310,13 @@
                     }
                 }
             }
-            $('.countdown').text((' 0' + hours).slice(-2) + ' giờ ' + ('0' + minutes).slice(-2) + ' phút ' + ('0' + seconds).slice(-2) + ' giây');
+            $('.countdown').text(('0' + minutes).slice(-2) + ' phút ' + ('0' + seconds).slice(-2) + ' giây');
         }, 1000);
 
         setInterval(function () {
-            seconds = 0;
-            minutes = 0;
-            hours = 2;
+            seconds = 12;
+            minutes = 5;
+            hours = 0;
         }, 7200000); // 2 hours in milliseconds
     }
 
