@@ -540,8 +540,8 @@ video {
   margin-top: -6rem;
 }
 
-.-mt-\[200px\] {
-  margin-top: -200px;
+.-mt-\[225px\] {
+  margin-top: -225px;
 }
 
 .mb-3 {
@@ -550,6 +550,10 @@ video {
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .mt-0 {
@@ -594,26 +598,6 @@ video {
 
 .mt-\[70px\] {
   margin-top: 70px;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
-.-mt-\[220px\] {
-  margin-top: -220px;
-}
-
-.-mt-\[217px\] {
-  margin-top: -217px;
-}
-
-.-mt-\[-225px\] {
-  margin-top: 225px;
-}
-
-.-mt-\[225px\] {
-  margin-top: -225px;
 }
 
 .flex {
@@ -744,6 +728,12 @@ video {
   justify-content: space-between;
 }
 
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -760,6 +750,10 @@ video {
   scroll-behavior: smooth;
 }
 
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
 .border {
   border-width: 1px;
 }
@@ -770,10 +764,6 @@ video {
 
 .border-r {
   border-right-width: 1px;
-}
-
-.border-r-2 {
-  border-right-width: 2px;
 }
 
 .border-none {
@@ -788,16 +778,6 @@ video {
 .border-primary-200 {
   --tw-border-opacity: 1;
   border-color: rgb(41 42 62 / var(--tw-border-opacity));
-}
-
-.border-b-primary-300 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(48 52 81 / var(--tw-border-opacity));
-}
-
-.border-r-primary-200 {
-  --tw-border-opacity: 1;
-  border-right-color: rgb(41 42 62 / var(--tw-border-opacity));
 }
 
 .border-r-primary-300 {
@@ -878,6 +858,11 @@ video {
   font-family: "Cozy Sans";
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-\[10px\] {
   font-size: 10px;
 }
@@ -934,13 +919,12 @@ video {
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-black {
   font-weight: 900;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-normal {
@@ -949,10 +933,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .uppercase {
